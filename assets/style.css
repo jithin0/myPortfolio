@@ -1,0 +1,239 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.top_section{
+    background-color: #00203F;
+    /*background: transparent;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 380px;
+    position: sticky;
+    top: 0%;
+}
+
+.header h1{
+    color: #ADF0D1;
+    font-size: 3em;
+    text-shadow: 4px 0px rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: flex-end;
+}
+
+.navbar li{    
+    font-size: 1.2em;
+    padding: 16px;
+}
+
+.navbar a{
+    color: #ADF0D1;
+}
+
+.navbar a:hover{
+    background-color: #ADF0D1;
+    color: #00203F;
+}
+
+#selectPage{
+    display: none;
+    margin: 12px;
+    border-radius: 6px;
+    border: none;
+    padding: 4px;
+    font-size: 1.1em;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+
+@media screen and (max-width:550px){
+    .top_section{
+        display: block;
+        position: sticky;
+        top: -4em;
+    }
+    
+    .navbar ul{
+        background-color: #FFD662;
+        display: flex;
+        justify-content: space-between;
+        max-height: 3em;
+    }
+    .navbar a{
+        width: 100%;
+        color: #00203F;
+        text-align: center;
+    }
+   /* #selectPage{
+        display: block;
+    } */
+}
+
+.introSection{
+    min-height: 30em;
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 13px;
+    color: #F5F3E7;    
+}
+
+.homeSection h1{
+    font-size: 7vmax;
+}
+
+.homeSection p{
+    font-size: 3.5vmax;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 3px 0px black;
+}
+
+.lineBreak{
+    margin: 5% auto;
+    width: 75%;
+}
+
+.aboutSection, .contactSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-align: center;
+    background: bisque;
+    border-radius: 13px;
+    margin: 2px;
+}
+
+.aboutSection img{
+    max-height: 20em;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.aboutSection p, .contactSection div{
+    margin: 15px;
+}
+
+@media screen  and (min-width: 700px){
+    .aboutSection{
+        flex-direction: row;
+        font-size: 2em;
+        text-align: left;
+    }
+    .contactSection{
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-evenly;
+    }
+}
+
+.skillsSection, .contactSection{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 28em;
+}
+
+.skillsSection div{
+    width: 25%;
+    font-size: 1.1em;
+    padding: 5px;
+    margin: 10px;
+    background-color: #00203F;
+    color: #FFD662;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    height: 15em;
+}
+
+.skillsSection h1{
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+#skillsIlearned{
+    font-size: 2em;
+    display: block;
+}
+
+.skillsSection p{
+    padding: 6px;
+}
+
+.cssSection, .pythonSection{
+    align-self: flex-end;
+}
+
+@media screen  and (max-width: 550px){
+    .skillsSection{
+        display: block;
+    }
+    .skillsSection div{
+        min-width: 70%;
+        margin: 5% auto;
+        height: 10em;
+    }
+    #skillsIlearned{
+        text-align: center;
+    }
+    .copyRights{
+        padding-top: 10px;
+    }
+}
+
+button{
+    padding: 15px;
+    font-size: 1.2em;
+    margin: 10px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+#instaButton{
+    background-image: linear-gradient(to bottom right, red, pink);
+}
+
+#fbButton{
+    background-image: linear-gradient(to bottom right, blue, lightblue);
+}
+
+#instaButton:hover{
+    background-image: linear-gradient(to bottom, red, orange);
+}
+
+#fbButton:hover{
+    background-image: linear-gradient(to bottom, blue, aqua);
+}
+
+.contactSection{
+    margin-bottom: 0%;
+    min-height: 25em;
+}
+
+.copyRights{
+    background-color: bisque;
+    text-align: center;
+    padding-bottom: 35px;
+}
